@@ -1,0 +1,79 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-text {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.p-datatable {
+  margin-top: 20px;
+}
+
+.p-datatable-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.p-datatable {
+  min-height: 400px;
+}
+
+.custom-table {
+  width: 100%;
+  min-height: 400px;
+}
+
+::ng-deep .p-paginator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+::ng-deep .p-paginator .p-paginator-pages {
+  gap: 10px;
+  display: flex;
+}
+
+::ng-deep .p-paginator .p-paginator-page {
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+::ng-deep .p-paginator .p-paginator-page.p-highlight {
+  background-color: #007ad9;
+  color: white;
+}
+
+::ng-deep .p-paginator .p-paginator-first,
+::ng-deep .p-paginator .p-paginator-prev,
+::ng-deep .p-paginator .p-paginator-next,
+::ng-deep .p-paginator .p-paginator-last {
+  padding: 10px;
+  font-size: 20px;
+}

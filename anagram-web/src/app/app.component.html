@@ -1,14 +1,33 @@
-<p-floatlabel>
-  <input pInputText id="over_label" [(ngModel)]="value1" autocomplete="off" />
-  <label for="over_label">Over Label</label>
-</p-floatlabel>
+<div class="container">
+  <h2>Gerador de Anagramas</h2>
 
-<p-floatlabel variant="in">
-  <input pInputText id="in_label" [(ngModel)]="value2" autocomplete="off" />
-  <label for="in_label">In Label</label>
-</p-floatlabel>
+  <div class="input-container">
+    <input type="text" [(ngModel)]="word" placeholder="Digite uma palavra" (keypress)="allowOnlyLetters($event)">
+    <button (click)="getAnagrams()" class="btn">Gerar Anagramas</button>
+  </div>
 
-<p-floatlabel variant="on">
-  <input pInputText id="on_label" [(ngModel)]="value3" autocomplete="off" />
-  <label for="on_label">On Label</label>
-</p-floatlabel>
+  <p-table 
+  [value]="anagrams" 
+  [paginator]="true" 
+  [rows]="pageSize" 
+  [totalRecords]="totalRecords"
+  [lazy]="true"
+  [resizableColumns]="false"
+  [tableStyle]="{ 'width': '100%', 'min-height': '400px' }"
+  class="custom-table"
+  (onPage)="changePage($event)"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>#</th>
+        <th>Anagrama</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-anagram let-index="rowIndex">
+      <tr>
+        <td>{{ index + 1 + page * pageSize }}</td>
+        <td>{{ anagram }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
