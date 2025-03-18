@@ -10,12 +10,12 @@ baixar o java 23 e o angular 19
 mvn clear install dentro da pasta do anagram-api
 npm install dentro da pasta do anagram-web
 
-* iniciar backend: execute no terminal dentro da pasta anagram-api
-- mvn spring-boot:run
+- iniciar backend: execute no terminal dentro da pasta anagram-api <br/>
+mvn spring-boot:run <br/>
 
-* iniciar frontend: execute no terminal dentro da pasta anagram-web
-- ng serve --open
-- link: http://localhost:4200/
+- iniciar frontend: execute no terminal dentro da pasta anagram-web<br/>
+ng serve --open <br/>
+link: http://localhost:4200/ <br/>
 
 # Informações sobre o projeto
 O projeto foi dividido entre frontend com angular e o backend com java springboot
