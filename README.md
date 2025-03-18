@@ -11,12 +11,13 @@ mvn clear install dentro da pasta do anagram-api
 npm install dentro da pasta do anagram-web
 
 * iniciar backend: execute no terminal dentro da pasta anagram-api
-mvn spring-boot:run
+- mvn spring-boot:run
 
 * iniciar frontend: execute no terminal dentro da pasta anagram-web
-ng serve --open
-link: http://localhost:4200/
+- ng serve --open
+- link: http://localhost:4200/
 
+# Informações sobre o projeto
 O projeto foi dividido entre frontend com angular e o backend com java springboot
 o frontend esta incompleto e principalmente a paginação não esta funcionando completamente certo por conta de tempo mas ja consegue demonstrar o funcionamento do gerador de anagramas.
 
