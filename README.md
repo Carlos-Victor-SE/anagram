@@ -2,13 +2,13 @@
 Projeto teste para vaga de desenvolvedor java
 
 # versões usadas:
-Java 23
+Java 23 <br/>
 Angular 19
 
 # iniciar projeto:
-baixar o java 23 e o angular 19
-mvn clear install dentro da pasta do anagram-api
-npm install dentro da pasta do anagram-web
+baixar o java 23 e o angular 19 <br/>
+mvn clear install dentro da pasta do anagram-api <br/>
+npm install dentro da pasta do anagram-web <br/>
 
 - iniciar backend: <br/>
 execute no terminal dentro da pasta anagram-api <br/>
